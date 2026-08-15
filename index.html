@@ -4,113 +4,289 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Project Description | PREVAIL</title>
-  <link rel="stylesheet" href="index.css" />
+  <title>PREVAIL | iGEM ECNU 2026</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages/home.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
 </head>
 
 <body>
-  <!-- Navbar -->
-  <header class="topbar">
-    <a href="index.html" class="logo">PREVAIL</a>
+  <div id="site-header"></div>
 
-    <nav class="nav">
-      <a href="index.html" class="active">Home</a>
-      <a href="team.html">Team</a>
-
-      <div class="nav-dropdown">
-        <button class="nav-trigger ">Project</button>
-        <div class="nav-menu">
-          <a href="Projectdescription.html">Description</a>
-          <a href="Projectengineering.html">Engineering</a>
-          <a href="Projectimplementation.html">Implementation</a>
-          <a href="Projectcontribution.html">Contribution</a>
+  <main class="story-home">
+    <section class="story-hero">
+      <div class="story-hero-shade"></div>
+      <div class="story-hero-content">
+        <p class="story-kicker">iGEM ECNU 2026 / Synthetic Biology & Tumor Immunity</p>
+        <h1>PREVAIL</h1>
+        <p class="story-hero-subtitle">
+          Redirecting pre-existing viral immunity toward cancer with engineered bacteria.
+        </p>
+        <p class="story-hero-copy">
+          PREVAIL explores a universal bacterial tumor vaccine: oncolytic bacteria
+          deliver a familiar SARS-CoV-2 antigen into tumor cells, asking the immune
+          system to remember what it already knows and attack where tumors hide.
+        </p>
+        <div class="story-hero-actions">
+          <a href="#storyline">Read the story</a>
+          <a href="Projectdescription.html">Project details</a>
         </div>
       </div>
+    </section>
 
-      <div class="nav-dropdown">
-        <button class="nav-trigger">Wet Lab</button>
-        <div class="nav-menu">
-          <a href="WLexperiments.html">Experiments</a>
-          <a href="WLresults.html">Results</a>
-          <a href="WLnotebook.html">Notebook</a>
-          <a href="WLsafety.html">Safety</a>
+    <section id="storyline" class="story-chapter opening-chapter">
+      <div class="chapter-number">01</div>
+      <div class="chapter-text">
+        <p class="story-kicker">The starting point</p>
+        <h2>Most tumor vaccines try to teach the immune system something new.</h2>
+      </div>
+      <div class="chapter-statement">
+        <p>
+          PREVAIL asks a different question: what if cancer therapy could reuse
+          immune memory that many people already carry?
+        </p>
+      </div>
+    </section>
+
+    <section class="story-chapter problem-chapter">
+      <div class="chapter-grid">
+        <div class="chapter-copy">
+          <div class="chapter-number">02</div>
+          <p class="story-kicker">Why it matters</p>
+          <h2>Tumors are not passive targets. They are protected environments.</h2>
+          <p>
+            Immunotherapy has changed cancer treatment, but many tumors remain
+            difficult to reach. The tumor microenvironment can suppress immune
+            activity, lack universal targets, and vary widely between patients.
+          </p>
+          <div class="micro-labels">
+            <span>Hypoxia</span>
+            <span>Low pH</span>
+            <span>Immune suppression</span>
+            <span>Target heterogeneity</span>
+          </div>
+        </div>
+
+        <div class="tme-narrative" aria-label="Barriers in the tumor microenvironment">
+          <p class="tme-intro">Inside a solid tumor, every layer creates another barrier.</p>
+          <article><span>01</span><strong>Oxygen fades</strong><p>Deep regions become hypoxic and difficult for conventional therapies to reach.</p></article>
+          <article><span>02</span><strong>Acidity rises</strong><p>A low-pH environment disrupts immune-cell function and favors tumor survival.</p></article>
+          <article><span>03</span><strong>Defenses weaken</strong><p>Suppressive signals prevent immune cells from sustaining an effective response.</p></article>
+          <article><span>04</span><strong>Targets change</strong><p>Tumor heterogeneity makes a single universal tumor antigen difficult to define.</p></article>
         </div>
       </div>
+    </section>
 
-      <div class="nav-dropdown">
-        <button class="nav-trigger">Dry Lab</button>
-        <div class="nav-menu">
-        <a href="DLmodeling.html">Modeling</a>
-        <a href="DLsoftware.html">Software</a>
-        <a href="DLartdesign.html">Art & Design</a>
-        </div>
-      </div>
-
-       <div class="nav-dropdown">
-        <button class="nav-trigger">Human Practices</button>
-        <div class="nav-menu">
-          <a href="human-practices.html">Integrated HP</a>
-        <a href="education.html">Education</a>
-        </div>
-      </div>
-
-      <a href="awards.html">Awards</a>
-    </nav>
-
-    <div class="nav-actions">
-      <button class="mobile-btn">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <p class="eyebrow">SCIENTIFIC NARRATIVE</p>
-      <h1>PREVAIL</h1>
-      <p class="hero-subtitle">
-        Pre-Existing Viral Immunity–Enabled Universal Bacterial Tumor Vaccine
+    <section class="insight-banner">
+      <div class="chapter-number chapter-number-light">03</div>
+      <p class="story-kicker">The turning point</p>
+      <h2>
+        Do not build a new immune response from zero.
+        <span>Recall an old one inside the tumor.</span>
+      </h2>
+      <p>
+        SARS-CoV-2 infection and vaccination have generated widespread immune
+        memory. PREVAIL uses RBD as a recognizable antigenic cue, turning a
+        familiar viral memory into a tumor-localized immune signal.
       </p>
-    </div>
-  </section>
+    </section>
 
-  <!-- Main -->
-  <main class="page-wrap">
-    <section class="section-block" id="home">
-      <p>Content goes here...</p>
+    <section class="story-chapter bacteria-chapter">
+      <div class="carrier-map">
+        <div class="carrier-path">
+          <span>Bloodstream</span>
+          <i></i>
+          <span>Hypoxic tumor core</span>
+          <i></i>
+          <span>Intracellular release</span>
+        </div>
+      </div>
+      <div class="chapter-copy">
+        <div class="chapter-number">04</div>
+        <p class="story-kicker">The carrier</p>
+        <h2>Bacteria know how to enter the places immune cells struggle to reach.</h2>
+        <p>
+          Oncolytic bacteria can preferentially colonize tumor tissue, penetrate
+          deep hypoxic regions, and be genetically engineered as low-cost delivery
+          vehicles. In PREVAIL, they are not decoration around the therapy; they
+          are the route into the tumor.
+        </p>
+        <div class="trait-stack">
+          <span>Tumor tropism</span>
+          <span>Deep penetration</span>
+          <span>Genetic modularity</span>
+          <span>Immune stimulation</span>
+          <span>Manufacturing accessibility</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="mechanism-chapter">
+      <div class="mechanism-art">
+        <p class="mechanism-lead">One familiar antigen.<br />Three biological transitions.</p>
+        <div class="mechanism-overlay">
+          <article>
+            <span>Act I</span>
+            <strong>Colonize</strong>
+            <p>Engineered bacteria reach the tumor microenvironment.</p>
+          </article>
+          <article>
+            <span>Act II</span>
+            <strong>Release</strong>
+            <p>Intracellular lysis releases SARS-CoV-2 RBD antigen.</p>
+          </article>
+          <article>
+            <span>Act III</span>
+            <strong>Recall</strong>
+            <p>Memory immune cells recognize the familiar cue and attack.</p>
+          </article>
+        </div>
+      </div>
+      <div class="mechanism-copy">
+        <div class="chapter-number chapter-number-light">05</div>
+        <p class="story-kicker">The mechanism</p>
+        <h2>A three-act delivery story.</h2>
+        <p>
+          PREVAIL converts tumor colonization into antigen presentation. The
+          bacteria deliver the signal; the tumor becomes the stage; pre-existing
+          antiviral immunity becomes the attacking force.
+        </p>
+        <p class="mechanism-summary">Bacteria carry the message. Tumor cells expose it. Immune memory supplies the response.</p>
+      </div>
+    </section>
+
+    <section class="engineering-chapter">
+      <div class="chapter-heading">
+        <div class="chapter-number">06</div>
+        <p class="story-kicker">Engineering the system</p>
+        <h2>From idea to modular biological device.</h2>
+        <p>
+          Each module answers one design question: where should the bacteria go,
+          when should they express, how should they release, and what immune
+          signal should they carry?
+        </p>
+      </div>
+
+      <div class="circuit-board">
+        <article>
+          <span>Chassis</span>
+          <h3>VNP20009 / ΔppGpp</h3>
+          <p>Low-toxicity, tumor-targeting bacterial candidates.</p>
+        </article>
+        <article>
+          <span>Control</span>
+          <h3>Intracellular promoters</h3>
+          <p>PsifA, PsseA, PsseJ and related promoters tune expression after invasion.</p>
+        </article>
+        <article>
+          <span>Release</span>
+          <h3>ΦX174E lysis</h3>
+          <p>A lysis module enables cargo release from bacteria inside tumor cells.</p>
+        </article>
+        <article>
+          <span>Cargo</span>
+          <h3>SARS-CoV-2 RBD</h3>
+          <p>A familiar antigenic signal for pre-existing immune memory.</p>
+        </article>
+        <article>
+          <span>Validation</span>
+          <h3>Immune memory model</h3>
+          <p>Spike adenovirus vaccination establishes measurable memory in mice.</p>
+        </article>
+      </div>
+
+    </section>
+
+    <section class="evidence-chapter">
+      <div class="chapter-heading">
+        <div class="chapter-number">07</div>
+        <p class="story-kicker">What we have built</p>
+        <h2>Early evidence connects delivery, immune memory, and antitumor effect.</h2>
+      </div>
+
+      <div class="evidence-rail">
+        <article>
+          <span>01</span>
+          <h3>Promoter screening</h3>
+          <p>Identified intracellular expression behavior with low extracellular leakage.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Lysis-release system</h3>
+          <p>Observed bacterial lysis and GFP release across tumor cell models.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>RBD delivery</h3>
+          <p>Western blot and imaging support RBD expression and intracellular release.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>Memory established</h3>
+          <p>Spike vaccination induced antigen-specific antibody responses in mice.</p>
+        </article>
+        <article>
+          <span>05</span>
+          <h3>Antitumor function</h3>
+          <p>RBD-delivering bacteria slowed tumor growth compared with control groups.</p>
+        </article>
+        <article>
+          <span>06</span>
+          <h3>Microenvironment shift</h3>
+          <p>Immune profiling suggests stronger DC, M1 macrophage, CD4+ and CD8+ T-cell activity.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="meaning-chapter">
+      <div>
+        <div class="chapter-number">08</div>
+        <p class="story-kicker">Why this direction matters</p>
+        <h2>A universal, low-cost, memory-guided route for tumor immunotherapy.</h2>
+      </div>
+      <p>
+        PREVAIL is not only a delivery system. It is a proposal for a more
+        accessible kind of cancer immunotherapy: one that uses bacterial
+        engineering to bring a common immune memory into a local tumor context.
+      </p>
+    </section>
+
+    <section class="next-chapter">
+      <div class="chapter-heading">
+        <div class="chapter-number">09</div>
+        <p class="story-kicker">Next experiments</p>
+        <h2>Three questions guide the next stage.</h2>
+      </div>
+      <div class="next-grid">
+        <article>
+          <span>Function</span>
+          <p>How strongly can the RBD bacterial vaccine suppress tumors in vivo?</p>
+        </article>
+        <article>
+          <span>Mechanism</span>
+          <p>Which lymphocyte populations change in blood, spleen, and tumor tissue?</p>
+        </article>
+        <article>
+          <span>Memory</span>
+          <p>Can memory T cells directly kill tumor cells after antigen delivery?</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="story-cta">
+      <p class="story-kicker">Continue the wiki</p>
+      <h2>Explore the chapters behind PREVAIL.</h2>
+      <div>
+        <a href="Projectdescription.html">Project</a>
+        <a href="WLexperiments.html">Wet Lab</a>
+        <a href="DLmodeling.html">Dry Lab</a>
+        <a href="human-practices.html">Human Practices</a>
+      </div>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-grid">
-      <div>
-        <h2>PREVAIL</h2>
-        <p>Pre-Existing Viral Immunity-Enabled Universal Bacterial Tumor Vaccine</p>
-        <small>iGEM ECNU 2026</small>
-      </div>
-
-      <div>
-        <h3>Quick Links</h3>
-        <a href="description.html">Project</a>
-        <a href="experiments.html">Lab Work</a>
-        <a href="human-practices.html">Human Practices</a>
-        <a href="team.html">Team</a>
-      </div>
-
-      <div>
-        <h3>Contact</h3>
-        <p>East China Normal University<br>500 Dongchuan Rd, Shanghai, China</p>
-        <a href="mailto:contact@ecnu.edu.cn">contact@ecnu.edu.cn</a>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      © 2026 iGEM ECNU PREVAIL Team. Built with Claude Code.
-    </div>
-  </footer>
+  <div id="site-footer"></div>
 
   <script src="index.js" defer></script>
 </body>
