@@ -305,6 +305,33 @@
   color: rgba(255, 255, 255, 0.74);
 }
 
+.memory-bridge {
+  width: min(900px, 92%);
+  margin: 0 auto;
+  padding: 56px 0;
+  display: grid;
+  grid-template-columns: minmax(180px, 0.38fr) minmax(0, 1fr);
+  gap: 42px;
+  align-items: start;
+  border-bottom: 1px solid #e8e5e2;
+}
+
+.memory-bridge-label {
+  color: var(--red);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.memory-bridge p {
+  margin: 0;
+  color: #252525;
+  font-family: Georgia, serif;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
 .carrier-map {
   min-height: 420px;
   padding: 34px;
@@ -577,7 +604,8 @@
   .bacteria-chapter,
   .mechanism-chapter,
   .meaning-chapter,
-  .next-grid {
+  .next-grid,
+  .memory-bridge {
     grid-template-columns: 1fr;
   }
 
@@ -602,6 +630,10 @@
   .mechanism-art::after {
     display: none;
   }
+
+  .mechanism-copy {
+    order: -1;
+  }
 }
 
 @media (max-width: 680px) {
@@ -618,6 +650,11 @@
   .evidence-chapter,
   .next-chapter {
     padding: 72px 0;
+  }
+
+  .memory-bridge {
+    padding: 48px 0;
+    gap: 16px;
   }
 
   .insight-banner,
