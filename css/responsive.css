@@ -1,0 +1,134 @@
+/* Responsive */
+@media (max-width: 980px) {
+  .nav {
+    position: fixed;
+    top: 58px;
+    left: 0;
+    right: 0;
+
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    height: auto;
+    max-height: calc(100vh - 58px);
+    gap: 0;
+
+    padding: 20px 28px;
+    background: white;
+    overflow-y: auto;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav > a,
+  .nav-trigger {
+    width: 100%;
+    height: auto;
+    padding: 14px 0;
+    justify-content: flex-start;
+    text-align: left;
+    line-height: 1.2;
+  }
+
+  .nav-dropdown {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .nav-menu {
+    position: static;
+    transform: none;
+
+    display: none;
+    width: 100%;
+    margin: 0 0 10px 16px;
+    box-shadow: none;
+
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .nav-dropdown.open .nav-menu {
+    display: flex;
+  }
+
+  .mobile-btn {
+    display: block;
+  }
+
+  .sponsor-btn,
+  .search-btn {
+    display: none;
+  }
+
+  .page-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .side-nav {
+    position: static;
+  }
+
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .steps-card,
+  .two-column > div:first-child {
+    grid-column: auto;
+  }
+
+  .feature-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .team-card-inner {
+    transition: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-section {
+    padding: 48px 18px;
+  }
+
+  .team-container {
+    padding: 36px 24px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .team-card-face {
+    padding: 26px;
+  }
+}
+
+/* 单独设置！！！ */
+@media (max-width: 980px) {
+  .nav-dropdown.open .nav-menu {
+    display: flex !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
+
+  .nav-menu {
+    position: static !important;
+    transform: none !important;
+    width: 100% !important;
+    margin: 8px 0 16px 16px !important;
+    padding: 10px !important;
+    background: #f3e6e8 !important;
+  }
+}
+
