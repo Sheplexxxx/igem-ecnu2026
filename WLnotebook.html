@@ -6,12 +6,96 @@
   <title>Notebook | PREVAIL</title>
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages/notebook.css" />
   <link rel="stylesheet" href="css/responsive.css" />
 </head>
 <body>
   <div id="site-header"></div>
-  <section class="hero"><div class="hero-overlay"></div><div class="hero-content"><p class="eyebrow">WET LAB</p><h1>Notebook</h1><p class="hero-subtitle">A chronological record of wet lab progress and decisions.</p></div></section>
-  <main class="page-wrap"><aside class="side-nav"><h3>NAVIGATION</h3><a href="#overview" class="side-link active">Overview</a></aside><article class="content"><section id="overview" class="section-block"><h2><span>01</span> Notebook</h2><p>This page is ready for lab notebook entries.</p></section></article></main>
+  <section class="hero"><div class="hero-overlay"></div><div class="hero-content"><p class="eyebrow">WET LAB</p><h1>Notebook</h1><p class="hero-subtitle">A chronological record of experimental progress, observations, and decisions.</p></div></section>
+
+  <main class="notebook-page">
+    <header class="notebook-intro">
+      <p class="notebook-kicker">iGEM Laboratory Notebook</p>
+      <h2>Experimental records</h2>
+      <p>Each entry documents what was planned, what was performed, what was observed, and what will be tested next.</p>
+    </header>
+
+    <article class="notebook-entry">
+      <header class="entry-header">
+        <div>
+          <p class="entry-label">Sample entry</p>
+          <h2>Intracellular promoter screening</h2>
+        </div>
+        <p class="entry-date"><time datetime="2026-04-16">16 Apr 2026</time></p>
+      </header>
+
+      <dl class="entry-meta">
+        <div><dt>Experiment ID</dt><dd>WL-EX-001</dd></div>
+        <div><dt>Researcher</dt><dd>PREVAIL Wet Lab Team</dd></div>
+        <div><dt>Project module</dt><dd>Intracellular expression control</dd></div>
+        <div><dt>Status</dt><dd><span class="status-tag">Completed</span></dd></div>
+      </dl>
+
+      <section class="entry-section">
+        <h3>Objective</h3>
+        <p>To compare candidate promoters and identify promoters with intracellular-specific responsiveness after bacterial invasion of tumor cells.</p>
+      </section>
+
+      <section class="entry-section two-column-entry">
+        <div>
+          <h3>Materials</h3>
+          <ul>
+            <li>Engineered bacterial strains carrying promoter-reporter constructs</li>
+            <li>Tumor cell culture model</li>
+            <li>Cell culture medium, antibiotics, and PBS</li>
+            <li>Fluorescence imaging and signal-quantification workflow</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Controls</h3>
+          <ul>
+            <li>Non-invaded bacterial culture</li>
+            <li>Reporter-only baseline control</li>
+            <li>Constitutive promoter reference</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="entry-section">
+        <h3>Procedure summary</h3>
+        <ol class="procedure-list">
+          <li>Prepare bacterial strains with the candidate promoter-reporter constructs.</li>
+          <li>Co-incubate bacteria with tumor cells under the planned infection conditions.</li>
+          <li>Remove extracellular bacteria according to the experimental workflow.</li>
+          <li>Measure reporter signals from intracellular and extracellular conditions.</li>
+          <li>Compare signal strength and leakage to select candidates for follow-up validation.</li>
+        </ol>
+      </section>
+
+      <section class="entry-section observation-section">
+        <h3>Observations</h3>
+        <table>
+          <thead><tr><th>Condition</th><th>Reporter signal</th><th>Interpretation</th></tr></thead>
+          <tbody>
+            <tr><td>Extracellular culture</td><td>Low</td><td>Limited basal expression</td></tr>
+            <tr><td>Intracellular condition</td><td>Increased</td><td>Candidate intracellular response</td></tr>
+            <tr><td>Constitutive reference</td><td>High</td><td>Positive reporter control</td></tr>
+          </tbody>
+        </table>
+        <p class="sample-note">Sample data only. Replace this table with measured values, figures, and raw-data links when available.</p>
+      </section>
+
+      <section class="entry-section conclusion-section">
+        <h3>Conclusion</h3>
+        <p>Candidate promoters showed a useful direction for intracellular-responsive expression. The next step is to repeat the comparison with biological replicates and select the promoter with the best intracellular signal-to-leakage ratio.</p>
+      </section>
+
+      <footer class="entry-footer">
+        <div><strong>Next step</strong><span>Validate selected promoters in additional tumor cell models.</span></div>
+        <div><strong>Related page</strong><a href="WLexperiments.html">Wet Lab Experiments</a></div>
+      </footer>
+    </article>
+  </main>
   <div id="site-footer"></div>
   <script src="index.js" defer></script>
 </body>
