@@ -4,11 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Implementation | PREVAIL</title>
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/components.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/base.css?v=20260901c" />
+  <link rel="stylesheet" href="css/components.css?v=20260901c" />
+  <link rel="stylesheet" href="css/pages/wiki.css" />
+  <link rel="stylesheet" href="css/responsive.css?v=20260901c" />
 </head>
-<body>
+<body class="wiki-document">
   <div id="site-header"></div>
 
   <section class="hero">
@@ -24,16 +25,38 @@
     <aside class="side-nav">
       <h3>NAVIGATION</h3>
       <a href="#overview" class="side-link active">Overview</a>
+      <a href="#users" class="side-link">Users & Context</a>
+      <a href="#roadmap" class="side-link">Translation Roadmap</a>
     </aside>
     <article class="content">
       <section id="overview" class="section-block">
         <h2><span>01</span> Implementation</h2>
         <p>This page is ready for implementation planning and deployment context.</p>
+        <p class="lead-copy">Implementation should connect the engineered system to a realistic use context without presenting an early research prototype as a clinical product.</p>
+        <p class="example-note">Example structure — validate each assumption with clinicians, biosafety specialists, manufacturing experts, patients, and regulators before replacing these prompts.</p>
+      </section>
+
+      <section id="users" class="section-block">
+        <h2><span>02</span> Proposed Users & Use Context</h2>
+        <div class="audience-grid">
+          <article><span class="evidence-label">Clinical</span><h3>Care teams</h3><p>Describe who would administer or monitor the intervention, the intended treatment setting, and the evidence they would need.</p></article>
+          <article><span class="evidence-label">Patient</span><h3>Eligible populations</h3><p>Define inclusion assumptions carefully and discuss how pre-existing immunity, tumor type, and patient variability affect suitability.</p></article>
+          <article><span class="evidence-label">System</span><h3>Manufacturing & oversight</h3><p>Map production, quality control, containment, distribution, monitoring, and responsible disposal requirements.</p></article>
+        </div>
+      </section>
+
+      <section id="roadmap" class="section-block">
+        <h2><span>03</span> Translation Roadmap</h2>
+        <div class="decision-chain">
+          <article><h3>Preclinical validation</h3><p>Define efficacy, biodistribution, dose, persistence, shedding, and toxicity evidence required before translation.</p></article>
+          <article><h3>Containment and manufacturing</h3><p>Specify genetic stability, kill-switch validation, batch consistency, storage, transport, and waste handling.</p></article>
+          <article><h3>Ethics and regulation</h3><p>Document consent, risk communication, equitable access, regulatory pathway, and long-term surveillance questions.</p></article>
+        </div>
       </section>
     </article>
   </main>
   <div id="site-footer"></div>
-  <script src="index.js" defer></script>
+  <script src="index.js?v=20260901c" defer></script>
 </body>
 </html>
 

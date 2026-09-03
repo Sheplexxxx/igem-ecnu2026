@@ -4,11 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Results | PREVAIL</title>
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/components.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/base.css?v=20260901c" />
+  <link rel="stylesheet" href="css/components.css?v=20260901c" />
+  <link rel="stylesheet" href="css/pages/wiki.css" />
+  <link rel="stylesheet" href="css/responsive.css?v=20260901c" />
 </head>
-<body>
+<body class="wiki-document">
   <div id="site-header"></div>
 
   <section class="hero">
@@ -24,16 +25,40 @@
     <aside class="side-nav">
       <h3>NAVIGATION</h3>
       <a href="#overview" class="side-link active">Overview</a>
+      <a href="#claims" class="side-link">Claims & Evidence</a>
+      <a href="#limits" class="side-link">Interpretation</a>
     </aside>
     <article class="content">
       <section id="overview" class="section-block">
         <h2><span>01</span> Results</h2>
         <p>This page is ready for wet lab results.</p>
+        <p class="lead-copy">Results should separate observation from interpretation and make every project claim traceable to figures, controls, replicates, and raw data.</p>
+        <p class="example-note">Example structure — no result below is asserted. Replace every prompt with measured evidence and preserve negative or inconclusive outcomes.</p>
+      </section>
+
+      <section id="claims" class="section-block">
+        <h2><span>02</span> Claims & Evidence</h2>
+        <div class="evidence-grid">
+          <article><span class="evidence-label">Claim 01</span><h3>Intracellular expression</h3><p>Team: state the supported claim, figure number, controls, replicate count, effect size, uncertainty, and raw-data link.</p></article>
+          <article><span class="evidence-label">Claim 02</span><h3>Lysis and payload release</h3><p>Team: distinguish evidence of bacterial lysis from evidence of intracellular payload availability.</p></article>
+          <article><span class="evidence-label">Claim 03</span><h3>Immune recognition</h3><p>Team: report assay scope, comparison groups, statistical method, and alternative explanations.</p></article>
+        </div>
+        <div class="figure-placeholder"><p>Replace with the strongest result figure. Include readable axes, units, sample sizes, uncertainty, statistical annotations, caption, and data source.</p></div>
+      </section>
+
+      <section id="limits" class="section-block">
+        <h2><span>03</span> Interpretation & Limitations</h2>
+        <ul class="criteria-list">
+          <li><strong>Supported</strong><span>State only what the reported data directly support.</span></li>
+          <li><strong>Unresolved</strong><span>List confounders, missing controls, model limitations, and unanswered mechanism questions.</span></li>
+          <li><strong>Negative results</strong><span>Document failed constructs and inconclusive assays when they informed engineering decisions.</span></li>
+          <li><strong>Next test</strong><span>Name the experiment that would most reduce the remaining uncertainty.</span></li>
+        </ul>
       </section>
     </article>
   </main>
   <div id="site-footer"></div>
-  <script src="index.js" defer></script>
+  <script src="index.js?v=20260901c" defer></script>
 </body>
 </html>
 

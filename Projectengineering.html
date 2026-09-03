@@ -4,11 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Engineering | PREVAIL</title>
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/components.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/base.css?v=20260901c" />
+  <link rel="stylesheet" href="css/components.css?v=20260901c" />
+  <link rel="stylesheet" href="css/pages/wiki.css" />
+  <link rel="stylesheet" href="css/responsive.css?v=20260901c" />
 </head>
-<body>
+<body class="wiki-document">
   <div id="site-header"></div>
 
   <section class="hero">
@@ -24,16 +25,39 @@
     <aside class="side-nav">
       <h3>NAVIGATION</h3>
       <a href="#overview" class="side-link active">Overview</a>
+      <a href="#cycle" class="side-link">DBTL Cycle</a>
+      <a href="#evidence" class="side-link">Iteration Evidence</a>
     </aside>
     <article class="content">
       <section id="overview" class="section-block">
         <h2><span>01</span> Engineering</h2>
         <p>This page is ready for engineering documentation.</p>
+        <p class="lead-copy">A strong iGEM engineering page connects every design choice to a build, a measurable test, and a documented learning decision.</p>
+        <p class="example-note">Example structure — replace each prompt with PREVAIL's real constructs, protocols, measurements, failures, and redesign decisions.</p>
+      </section>
+
+      <section id="cycle" class="section-block">
+        <h2><span>02</span> Design–Build–Test–Learn</h2>
+        <div class="dbtl-cycle">
+          <article><span class="step-label">Design</span><h3>Define the engineering question</h3><p>State the required function, design constraints, expected behavior, and the measurement that will determine success.</p></article>
+          <article><span class="step-label">Build</span><h3>Document the construct</h3><p>Record the chassis, genetic parts, assembly method, sequence references, and links to Registry documentation.</p></article>
+          <article><span class="step-label">Test</span><h3>Measure against controls</h3><p>Show the protocol, biological and technical replicates, controls, raw-data access, and analysis method.</p></article>
+          <article><span class="step-label">Learn</span><h3>Turn evidence into a decision</h3><p>Explain what worked, what failed, the limitation revealed, and exactly what changed in the next iteration.</p></article>
+        </div>
+      </section>
+
+      <section id="evidence" class="section-block">
+        <h2><span>03</span> Iteration Evidence</h2>
+        <div class="evidence-table-wrap"><table class="evidence-table"><thead><tr><th>Iteration</th><th>Question</th><th>Evidence to publish</th><th>Decision</th></tr></thead><tbody>
+          <tr><td>Cycle 01</td><td>Which promoter provides intracellular expression with limited extracellular leakage?</td><td>Construct map, screening protocol, controls, normalized reporter measurements, and uncertainty.</td><td>Team: identify the selected promoter and explain the selection threshold.</td></tr>
+          <tr><td>Cycle 02</td><td>Does the lysis module release the intended payload inside tumor cells?</td><td>Microscopy, protein assay, controls, replicate count, and links to raw data.</td><td>Team: document the redesign prompted by the observed release behavior.</td></tr>
+          <tr><td>Cycle 03</td><td>Does antigen presentation support immune recognition?</td><td>Assay design, negative and positive controls, statistical method, and limitations.</td><td>Team: connect the result to the next engineering step.</td></tr>
+        </tbody></table></div>
       </section>
     </article>
   </main>
   <div id="site-footer"></div>
-  <script src="index.js" defer></script>
+  <script src="index.js?v=20260901c" defer></script>
 </body>
 </html>
 

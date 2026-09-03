@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Safety | PREVAIL</title>
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/components.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/base.css?v=20260901c" />
+  <link rel="stylesheet" href="css/components.css?v=20260901c" />
+  <link rel="stylesheet" href="css/pages/wiki.css" />
+  <link rel="stylesheet" href="css/responsive.css?v=20260901c" />
 </head>
-<body>
+<body class="wiki-document">
   <div id="site-header"></div>
   <section class="hero"><div class="hero-overlay"></div><div class="hero-content"><p class="eyebrow">WET LAB</p><h1>Safety</h1><p class="hero-subtitle">Risk assessment, biosafety design, and responsible laboratory practice.</p></div></section>
-  <main class="page-wrap"><aside class="side-nav"><h3>NAVIGATION</h3><a href="#overview" class="side-link active">Overview</a></aside><article class="content"><section id="overview" class="section-block"><h2><span>01</span> Safety</h2><p>This page is ready for safety documentation.</p></section></article></main>
+  <main class="page-wrap">
+    <aside class="side-nav"><h3>NAVIGATION</h3><a href="#overview" class="side-link active">Overview</a><a href="#design" class="side-link">Safe Design</a><a href="#practice" class="side-link">Safe Practice</a></aside>
+    <article class="content">
+      <section id="overview" class="section-block"><h2><span>01</span> Safety</h2><p>This page is ready for safety documentation.</p><p class="lead-copy">The Wiki safety page should explain project-specific hazards, design choices, laboratory controls, and responsible-use considerations without copying confidential safety forms.</p><p class="example-note">Example structure — replace prompts with the team's approved risk assessment, institutional procedures, training records, containment evidence, and current iGEM safety-form references.</p></section>
+      <section id="design" class="section-block"><h2><span>02</span> Safe Project Design</h2><div class="risk-grid">
+        <article><span class="evidence-label">Biological</span><h3>Chassis and genetic parts</h3><p>Document organism risk group, strain properties, virulence-related features, antimicrobial resistance, payload risks, and safer alternatives considered.</p></article>
+        <article><span class="evidence-label">Containment</span><h3>Prevent unintended survival</h3><p>Describe physical and genetic containment, kill-switch logic, escape assumptions, validation conditions, and known failure modes.</p></article>
+        <article><span class="evidence-label">Application</span><h3>Responsible deployment</h3><p>Assess shedding, persistence, horizontal transfer, vulnerable populations, dual-use concerns, monitoring, and disposal.</p></article>
+      </div></section>
+      <section id="practice" class="section-block"><h2><span>03</span> Safe Laboratory Practice</h2><div class="evidence-table-wrap"><table class="evidence-table"><thead><tr><th>Area</th><th>Team evidence</th><th>Review point</th></tr></thead><tbody>
+        <tr><td>Training</td><td>Team: list required biosafety, chemical, equipment, and animal-work training.</td><td>Confirm dates, supervisors, and authorization scope.</td></tr>
+        <tr><td>Containment</td><td>Team: state facility level, PPE, decontamination, transport, storage, and waste procedures.</td><td>Link institutional SOPs where permitted.</td></tr>
+        <tr><td>Incident response</td><td>Team: document spill, exposure, equipment failure, and reporting procedures.</td><td>Verify emergency contacts and review process.</td></tr>
+      </tbody></table></div></section>
+    </article>
+  </main>
   <div id="site-footer"></div>
-  <script src="index.js" defer></script>
+  <script src="index.js?v=20260901c" defer></script>
 </body>
 </html>
 

@@ -1,54 +1,66 @@
 <!-- Navbar -->
 <header class="topbar">
-  <a href="index.html" class="logo">PREVAIL</a>
+  <div class="topbar-inner">
+    <a href="index.html" class="logo" aria-label="ECNU-CHINA home">
+      <span class="logo-image"><img src="assets/ecnu-brand/ecnu-china-logo.png" alt="ECNU-CHINA" /></span>
+      <span class="logo-type"><strong>PREVAIL</strong><small>ECNU-CHINA · 2026</small></span>
+    </a>
 
-  <nav class="nav">
-    <a href="index.html" data-nav-page="home">Home</a>
-    <a href="team.html" data-nav-page="team">Team</a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="index.html" data-nav-page="home">Home</a>
 
-    <div class="nav-dropdown" data-nav-group="project">
-      <button class="nav-trigger">Project</button>
-      <div class="nav-menu">
-        <a href="Projectdescription.html">Description</a>
-        <a href="Projectengineering.html">Engineering</a>
-        <a href="Projectimplementation.html">Implementation</a>
-        <a href="Projectcontribution.html">Contribution</a>
+      <div class="nav-dropdown" data-nav-group="project">
+        <button class="nav-trigger" type="button" aria-haspopup="true">Project</button>
+        <div class="nav-menu">
+          <a href="Projectdescription.html">Description</a>
+          <a href="Projectengineering.html">Engineering</a>
+          <a href="Projectimplementation.html">Implementation</a>
+          <a href="Projectcontribution.html">Contribution</a>
+        </div>
       </div>
-    </div>
 
-    <div class="nav-dropdown" data-nav-group="wet-lab">
-      <button class="nav-trigger">Wet Lab</button>
-      <div class="nav-menu">
-        <a href="WLexperiments.html">Experiments</a>
-        <a href="WLresults.html">Results</a>
-        <a href="WLnotebook.html">Notebook</a>
-        <a href="WLsafety.html">Safety</a>
+      <div class="nav-dropdown" data-nav-group="wet-lab">
+        <button class="nav-trigger" type="button" aria-haspopup="true">Wet Lab</button>
+        <div class="nav-menu">
+          <a href="WLexperiments.html">Experiments</a>
+          <a href="WLresults.html">Results</a>
+          <a href="WLnotebook.html">Notebook</a>
+          <a href="WLsafety.html">Safety</a>
+        </div>
       </div>
-    </div>
 
-    <div class="nav-dropdown" data-nav-group="dry-lab">
-      <button class="nav-trigger">Dry Lab</button>
-      <div class="nav-menu">
-        <a href="DLmodeling.html">Modeling</a>
-        <a href="DLsoftware.html">Software</a>
-        <a href="DLartdesign.html">Art & Design</a>
+      <div class="nav-dropdown" data-nav-group="dry-lab">
+        <button class="nav-trigger" type="button" aria-haspopup="true">Dry Lab</button>
+        <div class="nav-menu">
+          <a href="DLmodeling.html">Modeling</a>
+          <a href="DLsoftware.html">Software</a>
+          <a href="DLartdesign.html">Art & Design</a>
+        </div>
       </div>
-    </div>
 
-    <div class="nav-dropdown" data-nav-group="human-practices">
-      <button class="nav-trigger">Human Practices</button>
-      <div class="nav-menu">
-        <a href="human-practices.html">Integrated HP</a>
-        <a href="education.html">Education</a>
+      <div class="nav-dropdown" data-nav-group="human-practices">
+        <button class="nav-trigger" type="button" aria-haspopup="true">Human Practices</button>
+        <div class="nav-menu">
+          <a href="human-practices.html">Integrated HP</a>
+          <a href="education.html">Education</a>
+        </div>
       </div>
+
+      <div class="nav-dropdown" data-nav-group="team">
+        <button class="nav-trigger" type="button" aria-haspopup="true">Team</button>
+        <div class="nav-menu">
+          <a href="team.html">Members</a>
+          <a href="attributions.html">Attributions</a>
+        </div>
+      </div>
+
+      <a href="awards.html" data-nav-page="awards">Awards</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="mobile-btn" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-
-    <a href="awards.html" data-nav-page="awards">Awards</a>
-  </nav>
-
-  <div class="nav-actions">
-    <button class="mobile-btn" aria-label="Open navigation">
-      <span></span><span></span><span></span>
-    </button>
   </div>
 </header>

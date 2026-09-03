@@ -1,8 +1,22 @@
 /* Responsive */
+@media (max-width: 1200px) and (min-width: 981px) {
+  .topbar-inner {
+    width: calc(100% - 32px);
+  }
+
+  .nav {
+    gap: 16px;
+  }
+}
+
 @media (max-width: 980px) {
+  body.nav-open {
+    overflow: hidden;
+  }
+
   .nav {
     position: fixed;
-    top: 58px;
+    top: var(--header-height);
     left: 0;
     right: 0;
 
@@ -10,16 +24,17 @@
     flex-direction: column;
     align-items: stretch;
     height: auto;
-    max-height: calc(100vh - 58px);
+    max-height: calc(100svh - var(--header-height));
     gap: 0;
 
-    padding: 20px 28px;
-    background: white;
+    padding: 18px 24px 28px;
+    background: var(--brand-paper);
     overflow-y: auto;
   }
 
   .nav.open {
     display: flex;
+    animation: nav-panel-in 180ms ease-out both;
   }
 
   .nav > a,
@@ -30,6 +45,18 @@
     justify-content: flex-start;
     text-align: left;
     line-height: 1.2;
+  }
+
+  .nav > a.active::after,
+  .nav-trigger.active::after {
+    left: auto;
+    right: 2px;
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+
+  .topbar-inner {
+    width: calc(100% - 28px);
   }
 
   .nav-dropdown {
@@ -88,7 +115,92 @@
   }
 }
 
+@keyframes nav-panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 980px) {
+  .footer {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 44px 36px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+    max-width: 520px;
+  }
+
+  .footer-bottom {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-type strong {
+    font-size: 16px;
+  }
+
+  .logo-type small {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 620px) {
+  :root {
+    --header-height: 66px;
+  }
+
+  .logo-image {
+    width: 58px;
+  }
+
+  .footer {
+    padding: 72px 22px 28px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+    margin-bottom: 42px;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  .footer-bottom {
+    display: grid;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 420px) {
+  .logo-type small {
+    display: none;
+  }
+
+  .logo-type strong {
+    font-size: 15px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
+  .nav.open {
+    animation: none;
+  }
+
   .team-card-inner {
     transition: none;
   }
@@ -128,7 +240,7 @@
     width: 100% !important;
     margin: 8px 0 16px 16px !important;
     padding: 10px !important;
-    background: #f3e6e8 !important;
+    background: color-mix(in srgb, var(--brand-mist) 52%, var(--brand-paper)) !important;
   }
 }
 

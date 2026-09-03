@@ -3,299 +3,322 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>PREVAIL | iGEM ECNU 2026</title>
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/components.css" />
-  <link rel="stylesheet" href="css/pages/home.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,500&family=IBM+Plex+Serif:ital,wght@1,500;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/base.css?v=20260903a" />
+  <link rel="stylesheet" href="css/components.css?v=20260903a" />
+  <link rel="stylesheet" href="css/pages/home.css?v=20260903m" />
+  <link rel="stylesheet" href="css/responsive.css?v=20260903a" />
 </head>
-
 <body>
   <div id="site-header"></div>
-
   <main class="story-home">
-    <section class="story-hero">
-      <div class="story-hero-shade"></div>
-      <div class="story-hero-content">
-        <p class="story-kicker">iGEM ECNU 2026 / Synthetic Biology & Tumor Immunity</p>
-        <h1>PREVAIL</h1>
-        <p class="story-hero-subtitle">
-          Redirecting pre-existing viral immunity toward cancer with engineered bacteria.
-        </p>
-        <p class="story-hero-copy">
-          PREVAIL explores a universal bacterial tumor vaccine: oncolytic bacteria
-          deliver a familiar SARS-CoV-2 antigen into tumor cells, asking the immune
-          system to remember what it already knows and attack where tumors hide.
-        </p>
-        <div class="story-hero-actions">
-          <a href="#storyline">Read the story</a>
-          <a href="Projectdescription.html">Project details</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="storyline" class="story-chapter opening-chapter">
-      <div class="chapter-number">01</div>
-      <div class="chapter-text">
-        <p class="story-kicker">The starting point</p>
-        <h2>Most tumor vaccines try to teach the immune system something new.</h2>
-      </div>
-      <div class="chapter-statement">
-        <p>
-          PREVAIL asks a different question: what if cancer therapy could reuse
-          immune memory that many people already carry?
-        </p>
-      </div>
-    </section>
-
-    <section class="story-chapter problem-chapter">
-      <div class="chapter-grid">
-        <div class="chapter-copy">
-          <div class="chapter-number">02</div>
-          <p class="story-kicker">Why it matters</p>
-          <h2>Tumors are not passive targets. They are protected environments.</h2>
-          <p>
-            Immunotherapy has changed cancer treatment, but many tumors remain
-            difficult to reach. The tumor microenvironment can suppress immune
-            activity, lack universal targets, and vary widely between patients.
-          </p>
-          <div class="micro-labels">
-            <span>Hypoxia</span>
-            <span>Low pH</span>
-            <span>Immune suppression</span>
-            <span>Target heterogeneity</span>
+    <section class="home-hero" aria-labelledby="home-title">
+      <div class="home-shell hero-grid">
+        <div class="hero-copy" data-reveal>
+          <p class="home-kicker">iGEM ECNU 2026 · Tumor Immunotherapy</p>
+          <h1 id="home-title">The immune<br />system already<br />remembers.</h1>
+          <p class="hero-summary">PREVAIL explores a universal bacterial tumor vaccine that brings a familiar SARS-CoV-2 antigen into tumor cells—asking immunity to use what it already knows and attack where tumors hide.</p>
+          <div class="hero-actions">
+            <a class="home-button home-button-primary" href="#storyline">Enter the story <span aria-hidden="true">↓</span></a>
+            <a class="home-button home-button-text" href="Projectdescription.html">Project details</a>
           </div>
         </div>
+        <figure class="hero-mark" data-reveal>
+          <img src="assets/ecnu-brand/ecnu-china-logo.png" alt="ECNU-CHINA microbial factory logo" />
+        </figure>
+      </div>
+      <div class="home-shell hero-meta">
+        <strong>PREVAIL</strong>
+        <span>Pre-Existing Viral Immunity–Enabled Universal Bacterial Tumor Vaccine</span>
+      </div>
+    </section>
 
-        <div class="tme-narrative" aria-label="Barriers in the tumor microenvironment">
-          <p class="tme-intro">Inside a solid tumor, every layer creates another barrier.</p>
-          <article><span>01</span><strong>Oxygen fades</strong><p>Deep regions become hypoxic and difficult for conventional therapies to reach.</p></article>
-          <article><span>02</span><strong>Acidity rises</strong><p>A low-pH environment disrupts immune-cell function and favors tumor survival.</p></article>
-          <article><span>03</span><strong>Defenses weaken</strong><p>Suppressive signals prevent immune cells from sustaining an effective response.</p></article>
-          <article><span>04</span><strong>Targets change</strong><p>Tumor heterogeneity makes a single universal tumor antigen difficult to define.</p></article>
+    <section id="storyline" class="story-section origin-section" aria-labelledby="origin-title">
+      <div class="home-shell section-grid">
+        <header class="section-marker" data-reveal><span>01</span><p>The starting point</p></header>
+        <div class="section-copy statement-copy" data-reveal>
+          <h2 id="origin-title">Most tumor vaccines try to teach the immune system something new.</h2>
+          <p>PREVAIL asks a different question: what if cancer therapy could reuse immune memory that many people already carry?</p>
         </div>
       </div>
     </section>
 
-    <section class="insight-banner">
-      <div class="chapter-number chapter-number-light">03</div>
-      <p class="story-kicker">The turning point</p>
-      <h2>
-        Do not build a new immune response from zero.
-        <span>Recall an old one inside our body.</span>
-      </h2>
-      <p>
-        SARS-CoV-2 infection and vaccination have generated widespread immune
-        memory. PREVAIL uses RBD as a recognizable antigenic cue, turning a
-        familiar viral memory into a tumor-localized immune signal.
-      </p>
-    </section>
-
-    <section class="memory-bridge">
-      <div class="memory-bridge-label">Why SARS-CoV-2 RBD?</div>
-      <p>
-        SARS-CoV-2 exposure and vaccination have created widespread immune
-        memory. Rather than designing an unfamiliar tumor antigen from the
-        ground up, PREVAIL chooses RBD as a cue that many immune systems are
-        already prepared to recognize.
-      </p>
-    </section>
-
-    <section class="story-chapter bacteria-chapter">
-      <div class="carrier-map">
-        <div class="carrier-path">
-          <span>Bloodstream</span>
-          <i></i>
-          <span>Hypoxic tumor core</span>
-          <i></i>
-          <span>Intracellular release</span>
+    <section class="story-section barrier-section" aria-labelledby="barrier-title">
+      <div class="home-shell">
+        <div class="section-grid barrier-intro">
+          <header class="section-marker" data-reveal><span>02</span><p>Why it matters</p></header>
+          <div class="section-copy" data-reveal>
+            <h2 id="barrier-title">Tumors are not passive targets. They are protected environments.</h2>
+            <p>Immunotherapy has changed cancer treatment, but many tumors remain difficult to reach. The tumor microenvironment can suppress immune activity, lack universal targets, and vary widely between patients.</p>
+          </div>
         </div>
-      </div>
-      <div class="chapter-copy">
-        <div class="chapter-number">04</div>
-        <p class="story-kicker">The carrier</p>
-        <h2>Bacteria know how to enter the places immune cells struggle to reach.</h2>
-        <p>
-          Oncolytic bacteria can preferentially colonize tumor tissue, penetrate
-          deep hypoxic regions, and be genetically engineered as low-cost delivery
-          vehicles. In PREVAIL, they are not decoration around the therapy; they
-          are the route into the tumor.
-        </p>
-        <div class="trait-stack">
-          <span>Tumor tropism</span>
-          <span>Deep penetration</span>
-          <span>Genetic modularity</span>
-          <span>Immune stimulation</span>
-          <span>Manufacturing accessibility</span>
+        <div class="barrier-board" data-reveal aria-label="Barriers in the tumor microenvironment">
+          <div class="barrier-core">
+            <p>Inside a solid tumor, every layer creates another barrier.</p>
+            <div class="barrier-tags" aria-hidden="true"><span>Hypoxia</span><span>Low pH</span><span>Immune suppression</span><span>Target heterogeneity</span></div>
+          </div>
+          <div class="barrier-list">
+            <article><span>01</span><strong>Oxygen fades</strong><p>Deep regions become hypoxic and difficult for conventional therapies to reach.</p></article>
+            <article><span>02</span><strong>Acidity rises</strong><p>A low-pH environment disrupts immune-cell function and favors tumor survival.</p></article>
+            <article><span>03</span><strong>Defenses weaken</strong><p>Suppressive signals prevent immune cells from sustaining an effective response.</p></article>
+            <article><span>04</span><strong>Targets change</strong><p>Tumor heterogeneity makes a single universal tumor antigen difficult to define.</p></article>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="mechanism-chapter">
-      <div class="mechanism-art">
-        <p class="mechanism-lead">One familiar antigen.<br />Three biological transitions.</p>
-        <div class="mechanism-overlay">
-          <article>
-            <span>Act I</span>
-            <strong>Colonize</strong>
-            <p>Engineered bacteria reach the tumor microenvironment.</p>
+    <section class="story-section recall-section memory-scene" aria-labelledby="recall-title" data-auto-switcher="memory">
+      <div class="home-shell memory-layout">
+        <header class="section-marker section-marker-light" data-reveal><span>03</span><p>The turning point</p></header>
+        <div class="memory-heading" data-reveal>
+          <h2 id="recall-title">Do not start from zero.</h2>
+          <p>SARS-CoV-2 infection and vaccination have generated widespread immune memory. PREVAIL asks whether that familiar memory can be recalled inside a tumor.</p>
+        </div>
+
+        <div class="memory-switcher" data-switcher="memory" data-reveal>
+          <div class="memory-tabs" role="tablist" aria-label="Compare conventional and PREVAIL vaccine strategies">
+            <button type="button" role="tab" aria-selected="true" aria-controls="memory-new" id="tab-new">Conventional vaccine</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="memory-recall" id="tab-memory-recall">PREVAIL</button>
+          </div>
+          <div class="memory-track" aria-hidden="true"><span></span></div>
+
+          <article id="memory-new" role="tabpanel" aria-labelledby="tab-new">
+            <p class="memory-label">Teach a tumor antigen</p>
+            <p class="memory-statement">Build a new tumor-specific immune response.</p>
+            <p>Target selection, tumor heterogeneity, immune tolerance, and an immunosuppressive microenvironment can all limit that response.</p>
           </article>
-          <article>
-            <span>Act II</span>
-            <strong>Release</strong>
-            <p>Intracellular lysis releases the SARS-CoV-2 RBD antigen, which is presented by MHC class I molecules.</p>
-          </article>
-          <article>
-            <span>Act III</span>
-            <strong>Recall</strong>
-            <p>Memory immune cells recognize the familiar cue and attack.</p>
+          <article id="memory-recall" role="tabpanel" aria-labelledby="tab-memory-recall" hidden>
+            <p class="memory-label">Recall a viral antigen</p>
+            <p class="memory-statement">Reuse an immune response the body already remembers.</p>
+            <p>RBD acts as a familiar antigenic cue, reducing dependence on a patient-specific tumor antigen without claiming to eliminate tumor heterogeneity.</p>
           </article>
         </div>
-      </div>
-      <div class="mechanism-copy">
-        <div class="chapter-number chapter-number-light">05</div>
-        <p class="story-kicker">The mechanism</p>
-        <h2>A three-act delivery story.</h2>
-        <p>
-          PREVAIL converts tumor colonization into antigen presentation. The
-          bacteria deliver the signal; the tumor becomes the stage; pre-existing
-          antiviral immunity becomes the attacking force.
-        </p>
-        <p class="mechanism-summary">Bacteria carry the message. Tumor cells expose it. Immune memory supplies the response.</p>
+
+        <p class="memory-conclusion" data-reveal>The tumor does not become a virus. PREVAIL asks whether tumor-localized RBD can make it visible to recall immunity.</p>
       </div>
     </section>
 
-    <section class="engineering-chapter">
-      <div class="chapter-heading">
-        <div class="chapter-number">06</div>
-        <p class="story-kicker">Engineering the system</p>
-        <h2>From idea to modular biological device.</h2>
-        <p>
-          Each module answers one design question: where should the bacteria go,
-          when should they express, how should they release, and what immune
-          signal should they carry?
-        </p>
-      </div>
+    <section class="story-section carrier-section" aria-labelledby="carrier-title">
+      <div class="home-shell">
+        <div class="section-grid carrier-intro">
+          <header class="section-marker" data-reveal><span>04</span><p>The carrier</p></header>
+          <div class="section-copy" data-reveal>
+            <h2 id="carrier-title">Bacteria know how to enter the places immune cells struggle to reach.</h2>
+            <p>Oncolytic bacteria can preferentially colonize tumor tissue, penetrate deep hypoxic regions, and be genetically engineered as low-cost delivery vehicles. In PREVAIL, they are not decoration around the therapy; they are the route into the tumor.</p>
+          </div>
+        </div>
+        <figure class="carrier-journey" data-reveal aria-labelledby="carrier-journey-caption">
+          <div class="carrier-map" aria-hidden="true">
+            <svg class="carrier-tissue-scene" viewBox="0 0 900 500" role="img" aria-label="Conceptual illustration of engineered bacteria moving through surrounding tissue into the hypoxic core of a tumor">
+              <defs>
+                <linearGradient id="tumor-edge-fill" x1="0" x2="1"><stop offset="0" stop-color="#e8e8ef"/><stop offset="1" stop-color="#c6c7da"/></linearGradient>
+                <linearGradient id="tumor-core-fill" x1="0" x2="1"><stop offset="0" stop-color="#242458"/><stop offset="1" stop-color="#171742"/></linearGradient>
+                <filter id="bacterium-shadow" x="-40%" y="-80%" width="180%" height="260%"><feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#171742" flood-opacity=".18"/></filter>
+                <g id="carrier-bacterium-shape" filter="url(#bacterium-shadow)">
+                  <path class="bacterium-flagellum" d="M-31 0 C-47 -15 -52 15 -68 1"/>
+                  <rect class="bacterium-body" x="-32" y="-13" width="64" height="26" rx="13"/>
+                  <rect class="bacterium-cargo" x="-8" y="-7" width="25" height="14" rx="3"/>
+                  <path class="bacterium-detail" d="M-22 -5h8M-22 1h12M-22 7h7"/>
+                </g>
+              </defs>
 
-      <div class="circuit-board">
-        <article>
-          <span>01 / Build</span>
-          <h3>Construct the delivery system</h3>
-          <p>Engineer VNP20009 with an intracellular lysis-and-release module carrying the SARS-CoV-2 RBD antigen.</p>
-        </article>
-        <article>
-          <span>02 / Invade</span>
-          <h3>Colonize and enter tumor cells</h3>
-          <p>The VNP20009 bacterial carrier preferentially colonizes tumor tissue and enters tumor cells.</p>
-        </article>
-        <article>
-          <span>03 / Release</span>
-          <h3>Trigger intracellular lysis</h3>
-          <p>Intracellular-responsive promoters activate lysis-protein expression, releasing RBD antigen inside tumor cells.</p>
-        </article>
-        <article>
-          <span>04 / Present</span>
-          <h3>Process and present RBD</h3>
-          <p>RBD is processed into peptides and presented on the tumor-cell surface by MHC class I molecules.</p>
-        </article>
-        <article>
-          <span>05 / Kill</span>
-          <h3>Recall memory T cells</h3>
-          <p>SARS-CoV-2-specific memory T cells recognize the presented antigen and drive tumor-cell killing.</p>
-        </article>
-      </div>
+              <rect class="tissue-background" width="900" height="500"/>
+              <path class="tumor-edge-field" d="M330 -25 C410 35 382 104 448 151 C503 191 462 246 513 290 C572 341 531 421 593 525 H925 V-25 Z"/>
+              <path class="tumor-core-field" d="M605 -30 C559 67 650 128 593 208 C552 266 628 337 586 405 C560 447 598 486 628 525 H925 V-30 Z"/>
+              <path class="tissue-cleft" d="M-30 290 C120 252 209 326 337 257 C429 208 493 284 588 237 C680 191 724 241 934 176"/>
 
-    </section>
+              <g class="healthy-cells">
+                <path d="M20 66 C49 33 102 42 116 79 C128 113 92 137 50 126 C13 116 -5 94 20 66Z"/>
+                <path d="M142 29 C177 10 221 30 226 68 C231 105 190 121 154 105 C123 91 113 47 142 29Z"/>
+                <path d="M33 157 C67 130 119 148 126 188 C132 224 90 242 51 226 C17 212 4 180 33 157Z"/>
+                <path d="M162 139 C199 119 246 143 247 184 C248 219 208 240 171 221 C139 205 130 157 162 139Z"/>
+                <path d="M55 346 C91 320 137 340 142 379 C147 416 105 437 67 419 C35 404 25 368 55 346Z"/>
+                <path d="M181 330 C220 313 259 341 258 380 C257 419 211 434 178 412 C149 393 150 344 181 330Z"/>
+                <path d="M279 55 C310 38 346 59 350 94 C354 126 323 145 292 133 C261 120 251 71 279 55Z"/>
+              </g>
+              <g class="tumor-cells">
+                <path d="M383 47 C419 18 475 37 480 82 C484 120 440 143 401 126 C366 111 352 72 383 47Z"/>
+                <path d="M486 110 C527 84 574 113 572 155 C570 195 525 211 491 190 C461 172 454 130 486 110Z"/>
+                <path d="M392 351 C433 323 483 352 479 396 C475 438 425 451 393 426 C365 405 362 371 392 351Z"/>
+                <path d="M505 410 C540 383 590 404 595 445 C600 483 558 505 520 488 C487 474 476 432 505 410Z"/>
+                <path d="M690 72 C729 45 782 68 785 111 C788 151 742 170 707 150 C675 132 659 94 690 72Z"/>
+                <path d="M760 278 C800 251 852 276 852 319 C852 359 807 377 772 356 C740 337 729 299 760 278Z"/>
+                <path d="M662 377 C702 353 749 380 747 420 C745 458 704 478 670 457 C640 440 630 397 662 377Z"/>
+              </g>
 
-    <section class="evidence-chapter">
-      <div class="chapter-heading">
-        <div class="chapter-number">07</div>
-        <p class="story-kicker">What we have built</p>
-        <h2>Early evidence connects delivery, immune memory, and antitumor effect.</h2>
-      </div>
+              <g class="carrier-bacterium bacterium-one"><use href="#carrier-bacterium-shape"/></g>
 
-      <div class="evidence-rail">
-        <article>
-          <span>01</span>
-          <h3>Promoter screening</h3>
-          <p>Identified intracellular expression behavior with low extracellular leakage.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h3>Lysis-release system</h3>
-          <p>Observed bacterial lysis and GFP release across tumor cell models.</p>
-        </article>
-        <article>
-          <span>03</span>
-          <h3>RBD delivery</h3>
-          <p>Western blot and imaging support RBD expression and intracellular release.</p>
-        </article>
-        <article>
-          <span>04</span>
-          <h3>Memory established</h3>
-          <p>Spike vaccination induced antigen-specific antibody responses in mice.</p>
-        </article>
-        <article>
-          <span>05</span>
-          <h3>Antitumor function</h3>
-          <p>RBD-delivering bacteria slowed tumor growth compared with control groups.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="meaning-chapter">
-      <div>
-        <div class="chapter-number">08</div>
-        <p class="story-kicker">Why this direction matters</p>
-        <h2>A universal, low-cost, memory-guided route for tumor immunotherapy.</h2>
-      </div>
-      <p>
-        PREVAIL is not only a delivery system. It is a proposal for a more
-        accessible kind of cancer immunotherapy: one that uses bacterial
-        engineering to bring a common immune memory into a local tumor context.
-      </p>
-    </section>
-
-    <section class="next-chapter">
-      <div class="chapter-heading">
-        <div class="chapter-number">09</div>
-        <p class="story-kicker">Future directions</p>
-        <h2>Three directions for strengthening PREVAIL.</h2>
-      </div>
-      <div class="next-grid">
-        <article>
-          <span>01 / Efficacy</span>
-          <h3>Strengthen therapeutic effect</h3>
-          <p>Explore combination strategies with immune-checkpoint inhibitors, such as anti-PD-1 antibodies, to help reverse T-cell exhaustion and strengthen antitumor activity.</p>
-        </article>
-        <article>
-          <span>02 / Adaptability</span>
-          <h3>Broaden population coverage</h3>
-          <p>Use the modular genetic circuit as a platform for alternative familiar antigens, such as influenza, EBV, or CMV antigens, to support personalized immune recall.</p>
-        </article>
-        <article>
-          <span>03 / Validation</span>
-          <h3>Deepen mechanistic validation</h3>
-          <p>Advance long-term safety and efficacy assessment, trace the in vivo contribution of memory T cells, and develop models to predict the response to pre-existing immunity.</p>
-        </article>
+              <g class="scene-labels">
+                <text x="38" y="44">SURROUNDING TISSUE</text>
+                <text x="408" y="44">TUMOR EDGE</text>
+                <text x="690" y="44">HYPOXIC CORE</text>
+              </g>
+            </svg>
+            <svg class="carrier-tissue-scene carrier-tissue-mobile" viewBox="0 0 420 680" role="img" aria-label="Conceptual illustration of engineered bacteria moving down through surrounding tissue into the hypoxic core of a tumor">
+              <defs>
+                <filter id="mobile-bacterium-shadow" x="-40%" y="-80%" width="180%" height="260%"><feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#171742" flood-opacity=".18"/></filter>
+                <g id="carrier-bacterium-mobile-shape" filter="url(#mobile-bacterium-shadow)">
+                  <path class="bacterium-flagellum" d="M-31 0 C-47 -15 -52 15 -68 1"/>
+                  <rect class="bacterium-body" x="-32" y="-13" width="64" height="26" rx="13"/>
+                  <rect class="bacterium-cargo" x="-8" y="-7" width="25" height="14" rx="3"/>
+                  <path class="bacterium-detail" d="M-22 -5h8M-22 1h12M-22 7h7"/>
+                </g>
+              </defs>
+              <rect class="tissue-background" width="420" height="680"/>
+              <path class="tumor-edge-field" d="M-20 255 C75 210 122 284 196 246 C278 204 324 270 440 222 V700 H-20 Z"/>
+              <path class="tumor-core-field" d="M-20 475 C82 426 150 512 224 465 C301 416 360 481 440 438 V700 H-20 Z"/>
+              <path class="tissue-cleft" d="M202 -30 C166 92 252 164 207 263 C171 343 266 407 222 501 C197 554 241 608 260 715"/>
+              <g class="healthy-cells">
+                <path d="M22 72 C49 42 98 50 108 88 C117 121 82 142 47 130 C14 119 -1 94 22 72Z"/>
+                <path d="M282 44 C319 22 365 48 365 89 C365 126 322 144 289 124 C260 106 253 61 282 44Z"/>
+                <path d="M40 158 C73 133 120 154 124 194 C128 228 90 247 54 231 C22 217 13 180 40 158Z"/>
+                <path d="M296 150 C331 128 376 154 376 193 C376 229 337 248 302 229 C272 213 267 168 296 150Z"/>
+              </g>
+              <g class="tumor-cells">
+                <path d="M28 315 C67 287 117 313 116 355 C115 394 71 412 36 391 C5 372 -3 337 28 315Z"/>
+                <path d="M286 300 C324 274 373 303 370 345 C368 384 324 402 291 380 C261 361 257 320 286 300Z"/>
+                <path d="M49 520 C90 491 140 520 137 564 C134 606 85 620 52 596 C23 575 19 541 49 520Z"/>
+                <path d="M286 531 C326 505 374 533 372 575 C370 614 327 633 293 611 C263 593 255 552 286 531Z"/>
+              </g>
+              <g class="carrier-bacterium mobile-bacterium-one"><use href="#carrier-bacterium-mobile-shape"/></g>
+              <g class="scene-labels"><text x="24" y="36">SURROUNDING TISSUE</text><text x="24" y="292">TUMOR EDGE</text><text x="24" y="510">HYPOXIC CORE</text></g>
+            </svg>
+          </div>
+          <figcaption id="carrier-journey-caption">
+            <span class="carrier-caption-label">Conceptual delivery route</span>
+            <strong>A route into the tumor</strong>
+            <p>The carrier links preferential tumor colonization with delivery into regions that are otherwise difficult to reach.</p>
+            <ul class="carrier-traits" aria-label="Additional bacterial carrier traits"><li><span>01</span>Genetic modularity</li><li><span>02</span>Immune stimulation</li><li><span>03</span>Manufacturing accessibility</li></ul>
+          </figcaption>
+        </figure>
       </div>
     </section>
 
-    <section class="story-cta">
-      <p class="story-kicker">Continue the wiki</p>
-      <h2>Explore the chapters behind PREVAIL.</h2>
-      <div>
-        <a href="Projectdescription.html">Project</a>
-        <a href="WLexperiments.html">Wet Lab</a>
-        <a href="DLmodeling.html">Dry Lab</a>
-        <a href="human-practices.html">Human Practices</a>
+    <section class="story-section acts-section" aria-labelledby="acts-title">
+      <div class="home-shell">
+        <div class="section-grid acts-intro">
+          <header class="section-marker" data-reveal><span>05</span><p>The mechanism</p></header>
+          <div class="section-copy" data-reveal>
+            <p class="acts-pretitle">One familiar antigen.<br />Three biological transitions.</p>
+            <h2 id="acts-title">A three-act delivery story.</h2>
+            <p>PREVAIL converts tumor colonization into antigen presentation. The bacteria deliver the signal; the tumor becomes the stage; pre-existing antiviral immunity becomes the attacking force.</p>
+          </div>
+        </div>
+        <div class="act-sequence" data-reveal>
+          <div class="act-signal" aria-hidden="true"><span></span><i></i></div>
+          <ol class="act-rail">
+            <li><span>Act I</span><b class="act-symbol act-symbol-colonize" aria-hidden="true">
+              <svg viewBox="0 0 96 96">
+                <path class="icon-tumor-edge" d="M72 7 C58 20 66 34 58 46 C49 60 62 74 54 90 H98 V7 Z"/>
+                <g class="icon-bacteria-cluster">
+                  <g transform="translate(28 31) rotate(8)"><path class="icon-flagellum" d="M-14 0 C-22 -8 -25 7 -33 0"/><rect class="icon-bacterium" x="-14" y="-6" width="28" height="12" rx="6"/><rect class="icon-cargo" x="1" y="-3" width="8" height="6" rx="1"/></g>
+                  <g transform="translate(34 60) rotate(-7)"><path class="icon-flagellum" d="M-14 0 C-22 -8 -25 7 -33 0"/><rect class="icon-bacterium" x="-14" y="-6" width="28" height="12" rx="6"/><rect class="icon-cargo" x="1" y="-3" width="8" height="6" rx="1"/></g>
+                </g>
+              </svg>
+            </b><strong>Colonize</strong><p>Engineered bacteria reach the tumor microenvironment.</p></li>
+            <li><span>Act II</span><b class="act-symbol act-symbol-release" aria-hidden="true">
+              <svg viewBox="0 0 96 96">
+                <g class="icon-lysis-shell"><path d="M43 25 H34 C22 25 16 34 16 48 C16 62 22 71 34 71 H43"/><path d="M53 25 H62 C74 25 80 34 80 48 C80 62 74 71 62 71 H53"/></g>
+                <g class="icon-release-cargo"><rect x="43" y="42" width="10" height="10" rx="2"/><rect x="65" y="18" width="8" height="8" rx="1" transform="rotate(22 69 22)"/><rect x="70" y="72" width="8" height="8" rx="1" transform="rotate(-18 74 76)"/></g>
+                <path class="icon-release-trace" d="M55 39 L66 27 M57 56 L68 68"/>
+              </svg>
+            </b><strong>Release</strong><p>Intracellular lysis releases the SARS-CoV-2 RBD antigen, which is presented by MHC class I molecules.</p></li>
+            <li><span>Act III</span><b class="act-symbol act-symbol-recall" aria-hidden="true">
+              <svg viewBox="0 0 96 96">
+                <path class="icon-tumor-membrane" d="M3 79 C22 65 37 79 52 69 C65 60 76 68 96 57"/>
+                <path class="icon-mhc" d="M40 71 V57 M58 67 V57 M40 57 C44 48 54 48 58 57"/>
+                <path class="icon-peptide" d="M45 52 L50 48 L55 52"/>
+                <path class="icon-t-cell" d="M96 4 C70 2 57 14 58 34 C59 48 68 57 82 61"/>
+                <path class="icon-tcr" d="M68 43 L59 54 M68 43 L78 51"/>
+                <path class="icon-recognition" d="M60 53 L64 57 M57 57 L61 61"/>
+              </svg>
+            </b><strong>Recall</strong><p>Memory immune cells recognize the familiar cue and attack.</p></li>
+          </ol>
+        </div>
+        <p class="acts-closing" data-reveal>Bacteria carry the message. Tumor cells expose it. Immune memory supplies the response.</p>
+      </div>
+    </section>
+
+    <section class="story-section system-section" aria-labelledby="system-title">
+      <div class="home-shell">
+        <div class="section-grid system-intro">
+          <header class="section-marker section-marker-light" data-reveal><span>06</span><p>Engineering the system</p></header>
+          <div class="section-copy section-copy-light" data-reveal>
+            <h2 id="system-title">From idea to modular biological device.</h2>
+            <p>Each module answers one design question: where should the bacteria go, when should they express, how should they release, and what immune signal should they carry?</p>
+          </div>
+        </div>
+        <ol class="system-steps" data-reveal aria-label="PREVAIL engineering sequence">
+          <li><span>01 / Build</span><i class="system-step-node" aria-hidden="true"></i><div><small>What should carry the signal?</small><h3>Construct the delivery system</h3><p>Engineer VNP20009 with an intracellular lysis-and-release module carrying the SARS-CoV-2 RBD antigen.</p></div></li>
+          <li><span>02 / Invade</span><i class="system-step-node" aria-hidden="true"></i><div><small>Where should it go?</small><h3>Colonize and enter tumor cells</h3><p>The VNP20009 bacterial carrier preferentially colonizes tumor tissue and enters tumor cells.</p></div></li>
+          <li><span>03 / Release</span><i class="system-step-node" aria-hidden="true"></i><div><small>When should it release?</small><h3>Trigger intracellular lysis</h3><p>Intracellular-responsive promoters activate lysis-protein expression, releasing RBD antigen inside tumor cells.</p></div></li>
+          <li><span>04 / Present</span><i class="system-step-node" aria-hidden="true"></i><div><small>What should be presented?</small><h3>Process and present RBD</h3><p>RBD is processed into peptides and presented on the tumor-cell surface by MHC class I molecules.</p></div></li>
+          <li><span>05 / Kill</span><i class="system-step-node" aria-hidden="true"></i><div><small>Who should respond?</small><h3>Recall memory T cells</h3><p>SARS-CoV-2-specific memory T cells recognize the presented antigen and drive tumor-cell killing.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="story-section evidence-section" aria-labelledby="evidence-title">
+      <div class="home-shell">
+        <div class="section-grid evidence-intro">
+          <header class="section-marker" data-reveal><span>07</span><p>What we have built</p></header>
+          <div class="section-copy" data-reveal><h2 id="evidence-title">Early evidence connects delivery, immune memory, and antitumor effect.</h2></div>
+        </div>
+        <div class="evidence-ledger" data-reveal>
+          <div class="evidence-ledger-key" aria-hidden="true"><span>Delivery evidence · 01–03</span><span>Response evidence · 04–05</span></div>
+          <div class="evidence-grid">
+            <article><div class="evidence-meta"><span>01</span><em>Screening</em></div><h3>Promoter screening</h3><p>Identified intracellular expression behavior with low extracellular leakage.</p><a href="WLresults.html">View evidence <span aria-hidden="true">→</span></a></article>
+            <article><div class="evidence-meta"><span>02</span><em>Observation</em></div><h3>Lysis-release system</h3><p>Observed bacterial lysis and GFP release across tumor cell models.</p><a href="WLresults.html">View evidence <span aria-hidden="true">→</span></a></article>
+            <article><div class="evidence-meta"><span>03</span><em>Protein &amp; imaging</em></div><h3>RBD delivery</h3><p>Western blot and imaging support RBD expression and intracellular release.</p><a href="WLresults.html">View evidence <span aria-hidden="true">→</span></a></article>
+            <article><div class="evidence-meta"><span>04</span><em>Immune response</em></div><h3>Memory established</h3><p>Spike vaccination induced antigen-specific antibody responses in mice.</p><a href="WLresults.html">View evidence <span aria-hidden="true">→</span></a></article>
+            <article><div class="evidence-meta"><span>05</span><em>Functional outcome</em></div><h3>Antitumor function</h3><p>RBD-delivering bacteria slowed tumor growth compared with control groups.</p><a href="WLresults.html">View evidence <span aria-hidden="true">→</span></a></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section impact-section" aria-labelledby="impact-title">
+      <span class="impact-wordmark" aria-hidden="true">PREVAI<span>L</span></span>
+      <div class="home-shell section-grid impact-grid">
+        <header class="section-marker"><span>08</span><p>Why this direction matters</p></header>
+        <div class="section-copy impact-copy">
+          <h2 id="impact-title">A universal, low-cost, memory-guided route for tumor immunotherapy.</h2>
+          <p>PREVAIL is not only a delivery system. It is a proposal for a more accessible kind of cancer immunotherapy: one that uses bacterial engineering to bring a common immune memory into a local tumor context.</p>
+          <ul class="impact-pillars" aria-label="PREVAIL value pillars"><li><span>01</span>Universal platform</li><li><span>02</span>Accessible route</li><li><span>03</span>Memory-guided logic</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section future-section" aria-labelledby="future-title">
+      <div class="home-shell">
+        <div class="section-grid future-intro">
+          <header class="section-marker"><span>09</span><p>Future directions</p></header>
+          <div class="section-copy"><h2 id="future-title">Three directions for strengthening PREVAIL.</h2></div>
+        </div>
+        <div class="future-grid">
+          <article><span>01 / Efficacy</span><h3>Strengthen therapeutic effect</h3><p>Explore combination strategies with immune-checkpoint inhibitors, such as anti-PD-1 antibodies, to help reverse T-cell exhaustion and strengthen antitumor activity.</p></article>
+          <article><span>02 / Adaptability</span><h3>Broaden population coverage</h3><p>Use the modular genetic circuit as a platform for alternative familiar antigens, such as influenza, EBV, or CMV antigens, to support personalized immune recall.</p></article>
+          <article><span>03 / Validation</span><h3>Deepen mechanistic validation</h3><p>Advance long-term safety and efficacy assessment, trace the in vivo contribution of memory T cells, and develop models to predict the response to pre-existing immunity.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-closing" aria-labelledby="closing-title">
+      <div class="home-shell closing-grid">
+        <div data-reveal><p class="home-kicker">Continue the wiki</p><h2 id="closing-title">Explore the chapters behind PREVAIL.</h2></div>
+        <nav aria-label="Explore the PREVAIL wiki" data-reveal>
+          <a href="Projectdescription.html"><span>Project</span><i aria-hidden="true">→</i></a>
+          <a href="WLexperiments.html"><span>Wet Lab</span><i aria-hidden="true">→</i></a>
+          <a href="DLmodeling.html"><span>Dry Lab</span><i aria-hidden="true">→</i></a>
+          <a href="human-practices.html"><span>Human Practices</span><i aria-hidden="true">→</i></a>
+        </nav>
       </div>
     </section>
   </main>
-
   <div id="site-footer"></div>
-
-  <script src="index.js" defer></script>
+  <script src="index.js?v=20260903a" defer></script>
 </body>
 </html>

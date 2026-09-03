@@ -4,11 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Experiments | PREVAIL</title>
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/components.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/base.css?v=20260901c" />
+  <link rel="stylesheet" href="css/components.css?v=20260901c" />
+  <link rel="stylesheet" href="css/pages/wiki.css" />
+  <link rel="stylesheet" href="css/responsive.css?v=20260901c" />
 </head>
-<body>
+<body class="wiki-document">
   <div id="site-header"></div>
 
   <section class="hero">
@@ -24,16 +25,40 @@
     <aside class="side-nav">
       <h3>NAVIGATION</h3>
       <a href="#overview" class="side-link active">Overview</a>
+      <a href="#design" class="side-link">Experimental Design</a>
+      <a href="#protocol" class="side-link">Protocol Record</a>
     </aside>
     <article class="content">
       <section id="overview" class="section-block">
         <h2><span>01</span> Experiments</h2>
         <p>This page is ready for wet lab experiment details.</p>
+        <p class="lead-copy">A reproducible experiment page begins with a precise question, identifies controls and variables, and links each result to the protocol that produced it.</p>
+        <p class="example-note">Example structure — replace prompts with approved protocols, real experiment IDs, replicate counts, analysis methods, and links to the Notebook and Results pages.</p>
+      </section>
+
+      <section id="design" class="section-block">
+        <h2><span>02</span> Experimental Design</h2>
+        <div class="process-grid">
+          <article><span class="evidence-label">Question</span><h3>Define one testable claim</h3><p>State the biological question and the observation that would support or challenge the hypothesis.</p></article>
+          <article><span class="evidence-label">Controls</span><h3>Make comparisons interpretable</h3><p>Identify negative, positive, vehicle, chassis, and baseline controls relevant to the assay.</p></article>
+          <article><span class="evidence-label">Analysis</span><h3>Predefine the decision rule</h3><p>Record replicates, normalization, statistical method, exclusion rules, and the threshold for the next step.</p></article>
+        </div>
+        <div class="figure-placeholder"><p>Replace with a labeled experimental workflow that connects constructs, conditions, measurements, controls, and expected outputs.</p></div>
+      </section>
+
+      <section id="protocol" class="section-block">
+        <h2><span>03</span> Protocol Record</h2>
+        <div class="evidence-table-wrap"><table class="evidence-table"><thead><tr><th>Record</th><th>What to publish</th><th>Linked evidence</th></tr></thead><tbody>
+          <tr><td>Experiment ID</td><td>Unique ID, date, researcher, objective, and project module.</td><td>Notebook entry and raw-data folder.</td></tr>
+          <tr><td>Materials</td><td>Strains, plasmids, cell models, reagents, equipment, and supplier identifiers.</td><td>Registry pages and construct maps.</td></tr>
+          <tr><td>Procedure</td><td>Numbered steps, timing, temperatures, concentrations, and deviations.</td><td>Versioned protocol file.</td></tr>
+          <tr><td>Analysis</td><td>Processing script, normalization, statistical test, uncertainty, and plot source.</td><td>Results figure and analysis repository.</td></tr>
+        </tbody></table></div>
       </section>
     </article>
   </main>
   <div id="site-footer"></div>
-  <script src="index.js" defer></script>
+  <script src="index.js?v=20260901c" defer></script>
 </body>
 </html>
 

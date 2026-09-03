@@ -4,11 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contribution | PREVAIL</title>
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/components.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/base.css?v=20260901c" />
+  <link rel="stylesheet" href="css/components.css?v=20260901c" />
+  <link rel="stylesheet" href="css/pages/wiki.css" />
+  <link rel="stylesheet" href="css/responsive.css?v=20260901c" />
 </head>
-<body>
+<body class="wiki-document">
   <div id="site-header"></div>
 
   <section class="hero">
@@ -24,16 +25,39 @@
     <aside class="side-nav">
       <h3>NAVIGATION</h3>
       <a href="#overview" class="side-link active">Overview</a>
+      <a href="#artifact" class="side-link">Contribution Artifact</a>
+      <a href="#reuse" class="side-link">Reuse Guide</a>
     </aside>
     <article class="content">
       <section id="overview" class="section-block">
         <h2><span>01</span> Contribution</h2>
         <p>This page is ready for contribution records.</p>
+        <p class="lead-copy">A contribution becomes useful when another iGEM team can locate it, understand it, reproduce it, and adapt it.</p>
+        <p class="example-note">Example structure — publish only artifacts the team actually completed and provide stable Registry, repository, protocol, dataset, or release links.</p>
+      </section>
+
+      <section id="artifact" class="section-block">
+        <h2><span>02</span> Contribution Artifact</h2>
+        <div class="artifact-grid">
+          <article><span class="evidence-label">Identity</span><h3>Name the contribution</h3><p>State what the artifact is, who created it, its version, license, and intended audience.</p></article>
+          <article><span class="evidence-label">Access</span><h3>Provide a stable link</h3><p>Link the Registry part, source repository, protocol, dataset, design file, or documentation package.</p></article>
+          <article><span class="evidence-label">Evidence</span><h3>Show that it works</h3><p>Document validation, known limitations, dependencies, and what remains untested.</p></article>
+        </div>
+      </section>
+
+      <section id="reuse" class="section-block">
+        <h2><span>03</span> Reuse Guide</h2>
+        <ul class="reuse-list">
+          <li><strong>Prerequisites</strong><span>List required chassis, parts, software, equipment, permissions, and safety conditions.</span></li>
+          <li><strong>Procedure</strong><span>Provide numbered setup and use instructions with expected intermediate outputs.</span></li>
+          <li><strong>Validation</strong><span>Explain how another team can confirm correct operation and troubleshoot common failure modes.</span></li>
+          <li><strong>Adaptation</strong><span>Identify modular interfaces and conditions under which the artifact should not be reused unchanged.</span></li>
+        </ul>
       </section>
     </article>
   </main>
   <div id="site-footer"></div>
-  <script src="index.js" defer></script>
+  <script src="index.js?v=20260901c" defer></script>
 </body>
 </html>
 

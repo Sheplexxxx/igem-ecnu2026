@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Software | PREVAIL</title>
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/components.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/base.css?v=20260901c" />
+  <link rel="stylesheet" href="css/components.css?v=20260901c" />
+  <link rel="stylesheet" href="css/pages/wiki.css" />
+  <link rel="stylesheet" href="css/responsive.css?v=20260901c" />
 </head>
-<body>
+<body class="wiki-document">
   <div id="site-header"></div>
   <section class="hero"><div class="hero-overlay"></div><div class="hero-content"><p class="eyebrow">DRY LAB</p><h1>Software</h1><p class="hero-subtitle">Tools and interfaces supporting PREVAIL analysis and communication.</p></div></section>
-  <main class="page-wrap"><aside class="side-nav"><h3>NAVIGATION</h3><a href="#overview" class="side-link active">Overview</a></aside><article class="content"><section id="overview" class="section-block"><h2><span>01</span> Software</h2><p>This page is ready for software documentation.</p></section></article></main>
+  <main class="page-wrap">
+    <aside class="side-nav"><h3>NAVIGATION</h3><a href="#overview" class="side-link active">Overview</a><a href="#architecture" class="side-link">Architecture</a><a href="#reuse" class="side-link">Validation & Reuse</a></aside>
+    <article class="content">
+      <section id="overview" class="section-block"><h2><span>01</span> Software</h2><p>This page is ready for software documentation.</p><p class="lead-copy">Software evidence should connect a real user problem to a documented implementation, reproducible release, validation process, and reuse pathway.</p><p class="example-note">Example structure — publish real screenshots, repository and release links, license, installation steps, test evidence, and known limitations.</p></section>
+      <section id="architecture" class="section-block"><h2><span>02</span> System Architecture</h2><div class="artifact-grid">
+        <article><span class="evidence-label">Input</span><h3>Define accepted data</h3><p>Document formats, validation, privacy assumptions, preprocessing, units, and error handling.</p></article>
+        <article><span class="evidence-label">Process</span><h3>Explain the method</h3><p>Describe algorithms, dependencies, model versions, computation flow, and where scientific assumptions enter.</p></article>
+        <article><span class="evidence-label">Output</span><h3>Make results interpretable</h3><p>Show outputs, uncertainty, warnings, export options, provenance, and how users should avoid overinterpretation.</p></article>
+      </div><div class="interface-placeholder"><p>Replace with a real interface screenshot or workflow capture. Label the user's task, input state, output, validation feedback, and error state.</p></div></section>
+      <section id="reuse" class="section-block"><h2><span>03</span> Validation & Reuse</h2><ul class="reuse-list">
+        <li><strong>Availability</strong><span>Repository, tagged release, license, archived version, and source documentation.</span></li>
+        <li><strong>Installation</strong><span>Environment, dependencies, setup commands, example data, and expected output.</span></li>
+        <li><strong>Testing</strong><span>Unit, integration, scientific validation, usability feedback, and edge cases.</span></li>
+        <li><strong>Limitations</strong><span>Unsupported inputs, performance boundaries, privacy considerations, and unvalidated use cases.</span></li>
+      </ul></section>
+    </article>
+  </main>
   <div id="site-footer"></div>
-  <script src="index.js" defer></script>
+  <script src="index.js?v=20260901c" defer></script>
 </body>
 </html>
 

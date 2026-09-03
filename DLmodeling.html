@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Modeling | PREVAIL</title>
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/components.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/base.css?v=20260901c" />
+  <link rel="stylesheet" href="css/components.css?v=20260901c" />
+  <link rel="stylesheet" href="css/pages/wiki.css" />
+  <link rel="stylesheet" href="css/responsive.css?v=20260901c" />
 </head>
-<body>
+<body class="wiki-document">
   <div id="site-header"></div>
   <section class="hero"><div class="hero-overlay"></div><div class="hero-content"><p class="eyebrow">DRY LAB</p><h1>Modeling</h1><p class="hero-subtitle">Computational modeling for system behavior and therapeutic design.</p></div></section>
-  <main class="page-wrap"><aside class="side-nav"><h3>NAVIGATION</h3><a href="#overview" class="side-link active">Overview</a></aside><article class="content"><section id="overview" class="section-block"><h2><span>01</span> Modeling</h2><p>This page is ready for modeling content.</p></section></article></main>
+  <main class="page-wrap">
+    <aside class="side-nav"><h3>NAVIGATION</h3><a href="#overview" class="side-link active">Overview</a><a href="#model" class="side-link">Model Definition</a><a href="#impact" class="side-link">Validation & Impact</a></aside>
+    <article class="content">
+      <section id="overview" class="section-block"><h2><span>01</span> Modeling</h2><p>This page is ready for modeling content.</p><p class="lead-copy">An iGEM model is strongest when it answers a biological or engineering question, exposes its assumptions, is checked against evidence, and changes a project decision.</p><p class="example-note">Example structure — replace prompts with equations, units, parameter sources, code, calibration data, uncertainty, and the decisions influenced by the model.</p></section>
+      <section id="model" class="section-block"><h2><span>02</span> Model Definition</h2><div class="process-grid">
+        <article><span class="evidence-label">Question</span><h3>Define the decision</h3><p>State what the model predicts and which experimental or design choice depends on the answer.</p></article>
+        <article><span class="evidence-label">Structure</span><h3>Show equations and assumptions</h3><p>Define variables, units, boundary conditions, parameter sources, simplifications, and identifiable limitations.</p></article>
+        <article><span class="evidence-label">Implementation</span><h3>Make the analysis reusable</h3><p>Link versioned code, environment requirements, input data, seeds, solver settings, and instructions for reproduction.</p></article>
+      </div><div class="figure-placeholder"><p>Replace with a model diagram that connects biological processes, state variables, parameters, outputs, and experimental measurements.</p></div></section>
+      <section id="impact" class="section-block"><h2><span>03</span> Validation & Project Impact</h2><ul class="criteria-list">
+        <li><strong>Calibration</strong><span>Identify which data were used to estimate parameters and avoid using the same evidence as independent validation.</span></li>
+        <li><strong>Sensitivity</strong><span>Show which parameters drive predictions and how uncertainty propagates to the outcome.</span></li>
+        <li><strong>Validation</strong><span>Compare predictions with withheld literature or experimental data and discuss discrepancies.</span></li>
+        <li><strong>Decision</strong><span>Document the construct, dose, timing, assay, or hypothesis changed because of the model.</span></li>
+      </ul></section>
+    </article>
+  </main>
   <div id="site-footer"></div>
-  <script src="index.js" defer></script>
+  <script src="index.js?v=20260901c" defer></script>
 </body>
 </html>
 
